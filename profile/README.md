@@ -1,4 +1,4 @@
-# RRP-Reading-the-Sources-DH
+# 16th Century Exegesis of Paul
 
 ## Website
 
@@ -165,6 +165,7 @@ Examples of specific cases in our corpus are available **[here](https://github.c
 ## Project Timeline
 
 ```mermaid
+%%{init: {'gantt': {'leftPadding': 180, 'rightPadding': 20, 'fontSize': 14, 'sectionFontSize': 14}}}%%
 gantt
     title 16th Century Exegesis of Paul — Project Timeline
     dateFormat  YYYY
