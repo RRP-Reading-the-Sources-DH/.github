@@ -1,6 +1,6 @@
 <img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-teal-bg.png" alt="RRP logo" width="420" align="left"/>
 
-*The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.*
+*A digital corpus of 16th-century commentaries on the exegesis of Paul, from the SNSF project 16th Century Exegesis of Paul.*
 
 <br clear="left"/>
 
