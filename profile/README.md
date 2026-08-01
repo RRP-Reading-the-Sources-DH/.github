@@ -1,4 +1,4 @@
-<img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-white.png" alt="RRP logo" width="70" align="left"/>
+<img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-teal-bg.png" alt="RRP logo" width="90" align="left"/>
 
 # RRP | Reading the Sources
 
