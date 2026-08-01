@@ -1,4 +1,4 @@
-# 16th Century Exegesis of Paul
+# RRP-Reading-the-Sources-DH
 
 ## Website
 
@@ -165,14 +165,21 @@ Examples of specific cases in our corpus are available **[here](https://github.c
 ## Project Timeline
 
 ```mermaid
-timeline
+gantt
     title 16th Century Exegesis of Paul — Project Timeline
-    section 2023–2024 : HTR Lambertus Prototype
-        HTR training for Roman characters and Latin abbreviations : Lemmatization and linguistic annotation testing : Data normalization
-    section 2024–2025 : 1 Timothy Exegesis Project
-        Corpus development for the First Letter to Timothy : NLP lemmatization with CLTK : Topic modelling and visual analytics : Layout analysis model training : Development of Corpus B
-    section 2026 : Digital Library
-        Corpus consolidation : Web deployment via TEI Publisher : Expansion of Corpus C
+    dateFormat  YYYY
+    axisFormat  %Y
+
+    section HTR Lambertus Prototype
+    HTR training & data normalization       :done, a1, 2023, 2024
+
+    section 1 Timothy Exegesis Project
+    Corpus development & lemmatization      :done, a2, 2024, 2025
+    Topic modelling & layout analysis       :done, a3, 2024, 2025
+
+    section Digital Library
+    Corpus consolidation                    :active, a4, 2026, 2027
+    Web deployment via TEI Publisher        :active, a5, 2026, 2027
 ```
 
 ### 📚 2023–2024: HTR Lambertus Prototype
