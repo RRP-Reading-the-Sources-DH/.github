@@ -1,0 +1,251 @@
+# 16th Century Exegesis of Paul
+
+## Website
+
+* Website: https://16thexegesisdh.github.io/ReformingPaul/
+
+  > **Note:** This is a beta release. Content, structure, and features are still under development.
+
+* Migration to TEI Publisher scheduled for **autumn 2026**.
+
+## Project
+
+The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.
+
+This digital corpus will make it possible to develop specific textual analysis tools for **printed texts in Latin from the 16th century**, as well as models for the automatic processing of printed material from this period. A major digital dimension is therefore planned for this project, involving on the one hand the digitisation of a large number of printed documents, and on the other hand the computational exploitation of this data, in particular through distant reading and topic modelling.
+
+## Funder
+
+This project is funded by the Swiss National Science Foundation (SNSF). Project number: [207696](https://data.snf.ch/grants/grant/207696)
+
+## Table of Contents
+
+- [Data](#data)
+- [Corpus](#corpus)
+- [Models](#models)
+- [Workflow](#workflow)
+  - [I. Processing Pipeline](#i-processing-pipeline)
+  - [II. Web Application: TEI Publisher](#ii-web-application-tei-publisher)
+- [Guidelines](#guidelines)
+  - [I. Segmentation](#i-segmentation)
+  - [II. Transcription](#ii-transcription)
+- [Documentation](#documentation)
+- [Project Timeline](#project-timeline)
+- [Citations](#citations)
+
+---
+
+## Data
+
+The following repositories contain the XML-TEI texts from the 16th Century Exegesis of Paul project.
+
+* **TEI**
+  - [TEI-16th-Exegesis](https://github.com/RRP-Reading-the-Sources-DH/TEI-16th-Exegesis)
+
+---
+
+The following repositories contain the HTR texts from the 16th Century Exegesis of Paul project.
+
+* **HTR**
+  - [HTR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-A)
+  - [HTR-Corpus-B](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-B)
+  - [HTR-Corpus-C](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-C)
+
+---
+
+## Corpus
+
+| Corpus | Description | File |
+|--------|-------------|------|
+| **Corpus A** | Gold-standard corpus, manually corrected; used as a training dataset for the models. | [Corpus_A.csv](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-A/blob/main/corpus/Corpus_A.csv) |
+| **Corpus B** | Bronze-standard corpus, automatically corrected; manual corrections limited to verse-level OCR. | [Corpus_B.csv](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-B/blob/main/corpus/Corpus_B.csv) |
+| **Corpus C** | Silver-standard corpus; reviewed segmentation, corrected verse-level OCR. | [Corpus-C_priority_1_v2.csv](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-C/blob/main/corpus/Corpus-C_priority_1_v2.csv) |
+
+---
+
+## Models
+
+* **Layout Analysis:**
+  - [Repository – Segmentation-model](https://github.com/RRP-Reading-the-Sources-DH/Segmentation_model)
+  - Our model _Layout-16th-Print-Lat_ is available on Zenodo: [10.5281/zenodo.18492102](https://doi.org/10.5281/zenodo.18492102)
+* **HTR:**
+  - Best model currently available (trained by colleagues on a subset of our data; link forthcoming)
+  - Earlier model trained for the project:
+    - [Repository – OCR-model](https://github.com/RRP-Reading-the-Sources-DH/OCR-model)
+    - Earlier model (25.05.2024), _gallicorpora_ajust_, available on Zenodo: [10.5281/zenodo.19218113](https://doi.org/10.5281/zenodo.19218113)
+
+---
+
+## Workflow
+
+### I. Processing Pipeline
+
+```mermaid
+flowchart LR
+    A["XML / ALTO"]:::source --> B["XML / TEI"]:::core
+    B --> C["LaTeX"]:::format
+    B --> D["HTML"]:::format
+    B --> F["TXT"]:::format
+    C --> E["PDF"]:::output
+
+    classDef source fill:#E8DFF5,stroke:#8B5CF6,stroke-width:1px,color:#3B0764
+    classDef core fill:#FDE68A,stroke:#B45309,stroke-width:2px,color:#78350F
+    classDef format fill:#BFDBFE,stroke:#1D4ED8,stroke-width:1px,color:#1E3A8A
+    classDef output fill:#BBF7D0,stroke:#15803D,stroke-width:1px,color:#14532D
+```
+
+The complete pipeline and all scripts are described and available in the following repository:
+**[Workflow Repository – PipeLineThm](https://github.com/RRP-Reading-the-Sources-DH/PipeLineThm)**
+
+##### Further explanations and examples
+
+> See our training materials and introductory courses:
+>
+> **[Training Materials – CUSO 2025 Ed-Num Online](https://github.com/CUSO-2025-Ed-Num-online?view_as=public)**
+>
+> **Contributors**
+> - **Sonia Solfrini**, PhD candidate (University of Geneva | IHR, SNSF project [*SETAF*](https://github.com/SETAFDH))
+> - **Floriane Goy**, Postdoctoral researcher (University of Geneva | IHR, SNSF project [*16th Century Exegesis of Paul*](https://github.com/RRP-Reading-the-Sources-DH))
+
+### II. Web Application: TEI Publisher
+
+Planned for summer 2026.
+
+---
+
+## Guidelines
+
+Guidelines for building the segmentation and transcription data.
+
+### I. Segmentation
+The main documentation for segmentation is here: [Annotation Guide on GitHub](https://github.com/DEFI-COLaF/LADaS/blob/main/AnnotationGuide.md).
+* Examples of specific cases in our corpus: [here](https://github.com/RRP-Reading-the-Sources-DH/HTR_Paul_corpus/blob/main/README.md)
+
+### II. Transcription
+We follow, as closely as possible, the transcription standards proposed by [Catmus standard](https://catmus-guidelines.github.io):
+
+**Citation:**
+> **Ariane Pinche, Thibault Clérice, Alix Chagué, Jean-Baptiste Camps, Malamatenia Vlachou‑Efstathiou, et al.**
+> *CATMuS‑Medieval: Consistent Approaches to Transcribing ManuScripts. A generalized set of guidelines and models for Latin scripts from the Middle Ages (8th–16th century).*
+> 2023. HAL open archive: https://hal.archives-ouvertes.fr/hal-04346939
+
+Examples of specific cases in our corpus are available **[here](https://github.com/RRP-Reading-the-Sources-DH/HTR_Paul_corpus/blob/main/README.md)**.
+
+---
+
+#### Specific Keyboards
+
+- **[`16th-neolatin`](https://github.com/RRP-Reading-the-Sources-DH/HTR_Paul_corpus/blob/68a7f23d9eb70a8161f6066f8f650c67259446ee/keyboard/exegesis.json)**
+  Custom keyboard developed specifically for our 16th-century Neo-Latin corpus.
+
+- **[`medieval-latin`](https://github.com/RRP-Reading-the-Sources-DH/HTR_Paul_corpus/blob/68a7f23d9eb70a8161f6066f8f650c67259446ee/keyboard/medieval.json)**
+  Keyboard with minor adaptations based on the one developed for the [CREMMA-Medieval-LAT](https://github.com/HTR-United/CREMMA-Medieval-LAT/) project.
+
+> **Thibault Clérice, Malamatenia Vlachou‑Efstathiou, Alix Chagué.**
+> *CREMMA Medii Aevi: Literary manuscript text recognition in Latin.*
+> *Journal of Open Humanities Data*, vol. 9, p. 4, 2023.
+> DOI: https://doi.org/10.5334/johd.97 · HAL open archive: https://hal.science/hal-03828353
+
+---
+
+## Documentation
+[This repository](https://github.com/RRP-Reading-the-Sources-DH/Documentations) includes the project documentation, notebooks, and scripts.
+
+| Category | Content |
+|----------|---------|
+| 📄 Documents | [Project Presentation (May 2024)](https://github.com/RRP-Reading-the-Sources-DH/Documentations/blob/main/IHR_pr%C3%A9sentation_Projet.pdf) |
+| 📄 Documents | [Project Working Process (April 2025)](https://github.com/RRP-Reading-the-Sources-DH/Documentations/blob/main/Projet_wk.pdf) |
+| 📄 Documents | [Project Results (March 2026)](link) |
+| 📰 Article | Digital Architecture — *Humanistica*: [Données et modèles pour le traitement des documents en néolatin: le cas Lambert Daneau](link) |
+| 💻 Notebooks | Distant Reading · Lemmatization · LatinCy · Cleaning |
+| ⚙️ Script | Data processing |
+
+---
+
+## Project Timeline
+
+```mermaid
+timeline
+    title 16th Century Exegesis of Paul — Project Timeline
+    section 2023–2024 : HTR Lambertus Prototype
+        HTR training for Roman characters and Latin abbreviations : Lemmatization and linguistic annotation testing : Data normalization
+    section 2024–2025 : 1 Timothy Exegesis Project
+        Corpus development for the First Letter to Timothy : NLP lemmatization with CLTK : Topic modelling and visual analytics : Layout analysis model training : Development of Corpus B
+    section 2026 : Digital Library
+        Corpus consolidation : Web deployment via TEI Publisher : Expansion of Corpus C
+```
+
+### 📚 2023–2024: HTR Lambertus Prototype
+
+**Handwritten Text Recognition for early modern Latin texts**
+
+- HTR training for Roman characters and Latin abbreviations
+- Lemmatization and linguistic annotation testing
+- Data normalization
+
+**Repositories:**
+- [HTR_Lambertus_prototype](https://github.com/FourbeFlo/Lambertus)
+- [OCR-testing](https://github.com/FourbeFlo/OCR_test)
+
+---
+
+### 📖 2024–2025: 1 Timothy Exegesis Project
+
+**Corpus development for the First Letter to Timothy**
+
+- Data normalization and preprocessing
+- HTML website prototype
+- NLP automatic lemmatization with CLTK
+- Topic modelling and visual analytics
+- Layout analysis model training
+- Development of **Corpus B**, completing the Timotheus Corpus
+
+**Repositories:**
+- [HTR_1-Timotheus](https://github.com/RRP-Reading-the-Sources-DH/HTR_1-Timotheus)
+- [Pipeline Timotheus](https://github.com/RRP-Reading-the-Sources-DH/PipeLineThm)
+- [Website: Reforming Paul](https://github.com/RRP-Reading-the-Sources-DH/ReformingPaul)
+- [Layout Analysis dataset](https://github.com/RRP-Reading-the-Sources-DH/Segmentation_model)
+
+---
+
+### 🌐 2026: Digital Library
+
+**Corpus consolidation and web deployment**
+
+- Migration of HTR Lambertus prototype data → **Corpus A**
+- Migration of 1 Timothy project data → **Corpus B**
+- Expansion of **Corpus C** with additional books
+- Web application deployment via **TEI Publisher**
+
+**Repositories:**
+- [HTR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-A)
+- [TEI-16th-Exegesis](https://github.com/RRP-Reading-the-Sources-DH/TEI-16th-Exegesis)
+- HTR-Corpus-C: ...
+- Topic Modelling Results: ...
+- Paulus-App: ...
+
+---
+
+## Citations
+
+### Citation: Project
+
+Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi Schürmann, _16th Century Exegesis of Paul_, Geneva; Zürich, Universities of Geneva and Zürich, 2023.
+
+```bibtex
+@misc{Goy_exegesisofPaul_2023,
+  author={Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi Schürmann, Béatrice Dupuis},
+  title={16th Century Exegesis of Paul},
+  address={Geneva; Zürich},
+  publisher={University of Geneva; University of Zürich},
+  year={2023},
+  url={https://www.theologie.uzh.ch/de/faecher/neues-testament/Professur-f%C3%BCr-neutestamentliche-Wissenschaft/16th_century_exegesis_of_paul.html},
+  note={Grant number SNSF: 207696},
+}
+```
+
+## On the Project
+
+- Reformation Readings of Paul: [RRP](https://rrp.zahnd.be/) – database of 16th-century printed commentaries on Paul.
+- In Zürich: [Exegesis of Paul](https://www.theologie.uzh.ch/de/faecher/neues-testament/Professur-f%C3%BCr-neutestamentliche-Wissenschaft/16th_century_exegesis_of_paul.html)
+- In Geneva: [L'exégèse des épîtres pauliniennes](https://www.unige.ch/ihr/fr/accueil/exegese-paulinienne/)
