@@ -180,8 +180,8 @@ gantt
     HTR training & normalization        :done, a1, 2023, 2024
 
     section Step 2
-    Corpus & lemmatization               :done, a2, 2024, 2025
-    Topic modelling & layout analysis    :done, a3, 2024, 2025
+    Corpus & lemmatization               :done, a2, 2024, 2026
+    Topic modelling & layout analysis    :done, a3, 2024, 2026
 
     section Step 3
     Corpus consolidation                 :active, a4, 2026, 2027
@@ -189,7 +189,7 @@ gantt
 ```
 
 - **Step 1 (2023–2024): Lambertus Prototype** — HTR training for Roman characters and Latin abbreviations, lemmatization testing, data normalization.
-- **Step 2 (2024–2025): 1 Timothy Exegesis Project** — corpus development, CLTK lemmatization, topic modelling, layout analysis model training, Corpus B.
+- **Step 2 (2024–2026): 1 Timothy Exegesis Project** — corpus development, CLTK lemmatization, topic modelling, layout analysis model training, Corpus B.
 - **Step 3 (2026): Digital Library** — corpus consolidation, expansion of Corpus C, web deployment via TEI Publisher.
 
 ### 📚 2023–2024: HTR Lambertus Prototype
@@ -206,7 +206,7 @@ gantt
 
 ---
 
-### 📖 2024–2025: 1 Timothy Exegesis Project
+### 📖 2024–2026: 1 Timothy Exegesis Project
 
 **Corpus development for the First Letter to Timothy**
 
