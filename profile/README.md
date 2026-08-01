@@ -1,6 +1,4 @@
-<img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-teal-bg.png" alt="RRP logo" width="320" align="left"/>
-
-# RRP | Reading the Sources
+<img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-teal-bg.png" alt="RRP logo" width="420" align="left"/>
 
 *The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.*
 
