@@ -1,4 +1,10 @@
-# 16th Century Exegesis of Paul
+<img src="assets/rrp-logo-white.png" alt="RRP logo" width="70" align="left"/>
+
+# RRP | Reading the Sources
+
+*The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.*
+
+<br clear="left"/>
 
 ## Website
 
@@ -165,23 +171,26 @@ Examples of specific cases in our corpus are available **[here](https://github.c
 ## Project Timeline
 
 ```mermaid
-%%{init: {'gantt': {'leftPadding': 180, 'rightPadding': 20, 'fontSize': 14, 'sectionFontSize': 14}}}%%
 gantt
     title 16th Century Exegesis of Paul — Project Timeline
     dateFormat  YYYY
     axisFormat  %Y
 
-    section HTR Lambertus Prototype
-    HTR training & data normalization       :done, a1, 2023, 2024
+    section Step 1
+    HTR training & normalization        :done, a1, 2023, 2024
 
-    section 1 Timothy Exegesis Project
-    Corpus development & lemmatization      :done, a2, 2024, 2025
-    Topic modelling & layout analysis       :done, a3, 2024, 2025
+    section Step 2
+    Corpus & lemmatization               :done, a2, 2024, 2025
+    Topic modelling & layout analysis    :done, a3, 2024, 2025
 
-    section Digital Library
-    Corpus consolidation                    :active, a4, 2026, 2027
-    Web deployment via TEI Publisher        :active, a5, 2026, 2027
+    section Step 3
+    Corpus consolidation                 :active, a4, 2026, 2027
+    Web deployment (TEI Publisher)       :active, a5, 2026, 2027
 ```
+
+- **Step 1 (2023–2024): Lambertus Prototype** — HTR training for Roman characters and Latin abbreviations, lemmatization testing, data normalization.
+- **Step 2 (2024–2025): 1 Timothy Exegesis Project** — corpus development, CLTK lemmatization, topic modelling, layout analysis model training, Corpus B.
+- **Step 3 (2026): Digital Library** — corpus consolidation, expansion of Corpus C, web deployment via TEI Publisher.
 
 ### 📚 2023–2024: HTR Lambertus Prototype
 
