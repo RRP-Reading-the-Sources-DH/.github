@@ -1,20 +1,20 @@
 <img src="https://github.com/RRP-Reading-the-Sources-DH/.github/blob/main/profile/rrp-logo-teal-bg.png" alt="RRP logo" width="420" align="left"/>
 
-*A digital corpus of 16th-century commentaries on the exegesis of Paul, from the SNSF project 16th Century Exegesis of Paul.*
+*A digital corpus of 16th-century commentaries on the exegesis of Paul, from the SNSF project "16th Century Exegesis of Paul".*
 
 <br clear="left"/>
 
 ## Website
 
-  > **Note:** This is a beta release. Content, structure, and features are still under development.
-
-* Migration to TEI Publisher scheduled for **autumn 2026**.
+> **Note:** This is a beta release. Content, structure, and features are still under development.
+>
+> Migration to TEI Publisher is scheduled for **autumn 2026**.
 
 ## Project
 
 The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.
 
-This digital corpus will make it possible to develop specific textual analysis tools for **printed texts in Latin from the 16th century**, as well as models for the automatic processing of printed material from this period. A major digital dimension is therefore planned for this project, involving on the one hand the digitisation of a large number of printed documents, and on the other hand the computational exploitation of this data, in particular through distant reading and topic modelling.
+This digital corpus will make it possible to develop textual analysis tools specifically for **16th-century printed texts in Latin**, as well as models for the automatic processing of printed material from this period. A major digital dimension is therefore planned for this project, involving on the one hand the digitisation of a large number of printed documents, and on the other hand the computational exploitation of this data — in particular through distant reading and topic modelling.
 
 ## Funder
 
@@ -23,62 +23,69 @@ This project is funded by the Swiss National Science Foundation (SNSF). Project 
 ## Table of Contents
 
 - [Data](#data)
-- [Models](#models)
+- [Models](#ai-models)
+- [Documentation](#documentation)
+- [Publication](#publication)
 - [Citations](#citations)
+- [About the Project](#about-the-project)
 
 ---
 
 ## Data
 
-The following repository contain the files for the TEI-Publisher Application for the Website  **RRP | Reading the Sources**. 
+### TEI-Publisher
 
-* **TEI-Publisher**
-  - [Reading-the-Sources-App](https://github.com/RRP-Reading-the-Sources-DH/Reading-the-Sources-App)
+The following repository contains the files for the TEI-Publisher application powering the website **RRP | Reading the Sources**.
 
----
-The following repository contain the XML-TEI texts from the 16th Century Exegesis of Paul project.
+- [Reading-the-Sources-App](https://github.com/RRP-Reading-the-Sources-DH/Reading-the-Sources-App)
 
-* **TEI**
-  - [TEI-RRP-RS](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-RS)
+### TEI
 
----
+The following repository contains the XML-TEI texts from the *16th Century Exegesis of Paul* project.
 
-The following repositories contain the OCR data in XML/ALTO from the 16th Century Exegesis of Paul project.
+- [TEI-RRP-RS](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-RS)
 
-* **OCR**
-  - [OCR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-A)
-  - [OCR-Corpus-B](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-B)
-  - [OCR-Corpus-C](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-C)
+### OCR
 
+The following repositories contain the OCR data in XML/ALTO from the *16th Century Exegesis of Paul* project.
 
-| Corpus | Quality | Segmentation | OCR | 
-|--------|-------------|------|-----|
-| **Corpus A** | Gold-standard corpus | full humane correction | full humane correction| 
-| **Corpus B** | Silver-standard corpus | full humane correction | humane correction limited to verse-level OCR.  |
-| **Corpus C** | Bronze-standard corpus|  partial humane correction | humane correction limited to verse-level OCR. | 
+- [OCR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-A)
+- [OCR-Corpus-B](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-B)
+- [OCR-Corpus-C](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-C)
 
----
-
-## Models IA
-
-* **Layout Analysis:**
-  - [Repository – Segmentation-model](https://github.com/RRP-Reading-the-Sources-DH/Segmentation_model)
-  - Our model _Layout-16th-Print-Lat_ is available on Zenodo: [10.5281/zenodo.18492102](https://doi.org/10.5281/zenodo.18492102)
-* **HTR:**
-  - Best model currently available (trained by colleagues on a subset of our data; link forthcoming)
-  - Earlier model trained for the project:
-    - [Repository – OCR-model](https://github.com/RRP-Reading-the-Sources-DH/OCR-model)
-    - Earlier model (25.05.2024), _gallicorpora_ajust_, available on Zenodo: [10.5281/zenodo.19218113](https://doi.org/10.5281/zenodo.19218113)
+| Corpus | Quality | Segmentation | OCR |
+|--------|---------|--------------|-----|
+| **Corpus A** | Gold  | Full human correction | Full human correction |
+| **Corpus B** | Silver | Full human correction | Human correction limited to verse-level OCR |
+| **Corpus C** | Bronze | Partial human correction | Human correction limited to verse-level OCR |
 
 ---
+
+## AI Models
+
+**Layout Analysis:**
+- [Repository — Segmentation-model](https://github.com/RRP-Reading-the-Sources-DH/Segmentation_model)
+- Our model *Layout-16th-Print-Lat* is available on Zenodo: [10.5281/zenodo.18492102](https://doi.org/10.5281/zenodo.18492102)
+
+**HTR:**
+- Best model currently available (trained by colleagues on a subset of our data; link forthcoming)
+- Earlier model trained for the project:
+  - [Repository — OCR-model](https://github.com/RRP-Reading-the-Sources-DH/OCR-model)
+  - Earlier model (25.05.2024), *gallicorpora_ajust*, available on Zenodo: [10.5281/zenodo.19218113](https://doi.org/10.5281/zenodo.19218113)
+
+---
+
 ## Documentation
 
-On the project digital developpement, pipeline, scripte, timeline etc. 
+Documentation on the project's digital development, pipeline, scripts, timeline, etc.
 
-- [Documentations](https://github.com/RRP-Reading-the-Sources-DH/Documentations) 
+- [Documentations](https://github.com/RRP-Reading-the-Sources-DH/Documentations)
 
 ---
+
 ## Publication
+
+Floriane Goy, Noemi Schürmann, Benjamin Manig, Matteo Colombo, Ueli Zahnd, and Stefan Krauter. "Données et modèles pour le traitement des documents en néolatin : le cas Lambert Daneau." *Humanistica 2026*, Paris, France, Anthology of Computers and the Humanities, vol. 4, pp. 120–133, ⟨10.63744/5TcizCXUUTmJ⟩.
 
 ```bibtex
 @incollection{10.63744@5TcizCXUUTmJ,
@@ -89,15 +96,16 @@ cas Lambert Daneau},
   booktitle = {Actes de la Conférence Humanistica},
   publisher = {Anthology of Computers and the Humanities},
   pages = {120--133},
-  editor = {Serena Crespi and Simon Gabay and Martin Grandjean and Ariane Pinche and Marie Puren et Léa Saint-Raymond},
+  editor = {Serena Crespi and Simon Gabay and Martin Grandjean and Ariane Pinche and Marie Puren and Léa Saint-Raymond},
   doi = {10.63744/5TcizCXUUTmJ}
 }
 ```
+
 ---
 
 ## Citations
 
-### Citation :  Digital framework 
+### Citation: Digital Framework
 
 ```bibtex
 @misc{Goy_RRP-ReadingtheSources_2023,
@@ -106,19 +114,18 @@ cas Lambert Daneau},
   address={Geneva; Zürich},
   publisher={University of Geneva; University of Zürich},
   year={2023-2026},
-  url={adresse du projet après sa mise en ligne},
+  url={[project URL, to be added once the site is online]},
   note={Grant number SNSF: 207696},
 }
 ```
 
+### Citation: Project, 16th Century Exegesis of Paul
 
-### Citation: Project, 16th century Exegesis of Paul
-
-Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi Schürmann, _16th Century Exegesis of Paul_, Geneva; Zürich, Universities of Geneva and Zürich, 2023.
+Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi Schürmann, *16th Century Exegesis of Paul*, Geneva; Zürich, Universities of Geneva and Zürich, 2023.
 
 ```bibtex
 @misc{Goy_exegesisofPaul_2023,
-  author={Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi Schürmann, Béatrice Dupuis},
+  author={Ueli Zahnd and Stefan Krauter and Matteo Colombo and Floriane Goy and Benjamin Manig and Noemi Schürmann and Béatrice Dupuis},
   title={16th Century Exegesis of Paul},
   address={Geneva; Zürich},
   publisher={University of Geneva; University of Zürich},
@@ -128,8 +135,10 @@ Ueli Zahnd, Stefan Krauter, Matteo Colombo, Floriane Goy, Benjamin Manig, Noemi 
 }
 ```
 
-## On the Project
+---
 
-- Reformation Readings of Paul: [RRP](https://rrp.zahnd.be/) – database of 16th-century printed commentaries on Paul.
+## About the Project
+
+- Reformation Readings of Paul: [RRP](https://rrp.zahnd.be/) — database of 16th-century printed commentaries on Paul.
 - In Zürich: [Exegesis of Paul](https://www.theologie.uzh.ch/de/faecher/neues-testament/Professur-f%C3%BCr-neutestamentliche-Wissenschaft/16th_century_exegesis_of_paul.html)
 - In Geneva: [L'exégèse des épîtres pauliniennes](https://www.unige.ch/ihr/fr/accueil/exegese-paulinienne/)
