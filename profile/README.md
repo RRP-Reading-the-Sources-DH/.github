@@ -44,7 +44,7 @@ This project is funded by the Swiss National Science Foundation (SNSF). Project 
 The following repositories contain the XML-TEI texts from the 16th Century Exegesis of Paul project.
 
 * **TEI**
-  - [TEI-16th-Exegesis](https://github.com/RRP-Reading-the-Sources-DH/TEI-16th-Exegesis)
+  - [TEI-RRP-RS](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-RS)
 
 ---
 
