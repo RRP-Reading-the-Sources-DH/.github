@@ -49,9 +49,9 @@ The following repository contains the XML-TEI texts from the *16th Century Exege
 
 The following repositories contain the OCR data in XML/ALTO from the *16th Century Exegesis of Paul* project.
 
-- [OCR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-A)
-- [OCR-Corpus-B](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-B)
-- [OCR-Corpus-C](https://github.com/RRP-Reading-the-Sources-DH/OCR-Corpus-C)
+- [HTR-Corpus-A](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-A)
+- [HTR-Corpus-B](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-B)
+- [HTR-Corpus-C](https://github.com/RRP-Reading-the-Sources-DH/HTR-Corpus-C)
 
 | Corpus | Quality | Segmentation | OCR |
 |--------|---------|--------------|-----|
