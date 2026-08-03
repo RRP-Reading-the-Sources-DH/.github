@@ -45,7 +45,7 @@ The following repository contains the XML-TEI texts from the *16th Century Exege
 
 - [TEI-RRP-RS](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-RS)
 
-### OCR
+### HTR
 
 The following repositories contain the OCR data in XML/ALTO from the *16th Century Exegesis of Paul* project.
 
