@@ -43,7 +43,7 @@ The following repository contains the files for the TEI-Publisher application po
 
 The following repository contains the XML-TEI texts from the *16th Century Exegesis of Paul* project.
 
-- [TEI-RRP-RS](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-RS)
+- [TEI-RRP-Corpus](https://github.com/RRP-Reading-the-Sources-DH/TEI-RRP-Corpus)
 
 ### HTR
 
