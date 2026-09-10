@@ -9,6 +9,7 @@
 > **Note:** This is a beta release. Content, structure, and features are still under development.
 >
 > Migration to TEI Publisher is scheduled for **autumn 2026**.
+> Visual of the website : (🌐)[https://github.com/RRP-Reading-the-Sources-DH/Documentations/blob/main/Project-Summary/Pres_Goy_2026_website-demonstation-final.pdf]
 
 ## Project
 
