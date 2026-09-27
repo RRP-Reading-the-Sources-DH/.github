@@ -21,15 +21,6 @@
 <p align="center">✦ ✦ ✦</p>
 <br/>
 
-## Website
-
-### 🌐 [RRP | Reading the Sources](https://ihr-num.unige.ch/rrp/sources/landing.html)
-
-Browse, read and search the TEI-encoded commentaries of the corpus online.
-
-> [!NOTE]
-> This is a **beta release**. Content, structure, and features are still under development.
-
 ## Project
 
 The digital component of the project on the exegesis of Paul aims to build a corpus of commentaries dating from the 16th century.
