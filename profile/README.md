@@ -4,7 +4,7 @@
 
 <br clear="left"/>
 
-<p align="center">
+<p align="left">
   <a href="https://ihr-num.unige.ch/rrp/sources/landing.html">
     <img src="https://img.shields.io/badge/🌐_Visit_the_website-RRP_|_Reading_the_Sources-0f766e?style=for-the-badge" alt="Visit the website: RRP | Reading the Sources"/>
   </a>
