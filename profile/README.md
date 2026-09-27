@@ -12,9 +12,10 @@
 
 <p align="center">
   <a href="https://ihr-num.unige.ch/rrp/sources/landing.html"><b>ihr-num.unige.ch/rrp/sources</b></a>
-  &nbsp;·&nbsp; <i>Beta release — content, structure and features are still under development.</i>
+  &nbsp;·&nbsp; <i>Beta release : content, structure and features are still under development.</i>
 </p>
 
+---
 ---
 
 ## Website
